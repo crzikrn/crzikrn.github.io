@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/lightbox.min.css">
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:300,400,700' rel='stylesheet' type='text/css'>
     <script src=""></script>
     <title>BYUNNNN</title>
@@ -126,10 +126,12 @@
             <!-- project image -->
             <div class="image">
               <div class="col-md-6">
-                <img src="image/data_02.png" class="img-responsive">
-                <img src="image/data_01.png" class="img-responsive">
+                <a href="https://medium.com/i-data/relationships-between-youth-crimes-stress-depression-and-college-scholastic-ability-tests-4ef78ca1a250"><img src="image/data_02.png" class="img-responsive"></a>
+                <a href="image/data_01.png" data-lightbox="data-box">
+                  <img src="image/data_01.png" class="img-responsive"></a>
                 <!-- <img src="image/data_03.png" class="img-responsive"> -->
-                <img src="image/data_04.png" class="img-responsive">
+                <a href="image/data_04.png" data-lightbox="data-box">
+                <img src="image/data_04.png" class="img-responsive"></a>
 
 
               </div>
@@ -169,5 +171,12 @@
         </div>
       </div>
     </div>
+    <script src="js/lightbox-plus-jquery.min.js"></script>
+      <script>
+        lightbox.option({
+          'resizeDuration': 200,
+          'wrapAround': true
+        })
+      </script>
   </body>
 </html>
