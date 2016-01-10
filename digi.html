@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/lightbox.min.css">
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:300,400,700' rel='stylesheet' type='text/css'>
     <script src=""></script>
     <title>BYUNNNN</title>
@@ -135,11 +135,14 @@
               </div>
 
               <div class="col-md-6">
-                <img src="image/dian_01.png" class="img-responsive">
-                <img src="image/dian_00.png" class="img-responsive">
+                <a href="image/dian_01.png" data-lightbox="dian-box">
+                <img src="image/dian_01.png" class="img-responsive"></a>
+                <a href="image/dian_00.png" data-lightbox="dian-box">
+                <img src="image/dian_00.png" class="img-responsive"></a>
               </div>
               <div class="col-md-6">
-                <img src="image/dian_02.png" class="img-responsive">
+                <a href="image/dian_02.png" data-lightbox="dian-box">
+                <img src="image/dian_02.png" class="img-responsive"></a>
                 <p><p>
               </div>
 
@@ -165,5 +168,12 @@
         </div>
       </div>
     </div>
+    <script src="js/lightbox-plus-jquery.min.js"></script>
+      <script>
+        lightbox.option({
+          'resizeDuration': 200,
+          'wrapAround': true
+        })
+      </script>
   </body>
 </html>
