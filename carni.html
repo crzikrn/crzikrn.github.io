@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/lightbox.min.css">
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:300,400,700' rel='stylesheet' type='text/css'>
     <script src=""></script>
     <title>BYUNNNN</title>
@@ -128,15 +128,21 @@
             <!-- project image -->
             <div class="image">
               <div class="col-md-6">
-                <img src="image/carni_00.jpg" class="img-responsive ">
-                <img src="image/carni_01.png" class="img-responsive ">
-                  <img src="image/carni_02.jpg" class="img-responsive ">
-                    <img src="image/carni_03.jpg" class="img-responsive ">
+                <a href="image/carni_00.jpg" data-lightbox="carni-box">
+                <img src="image/carni_00.jpg" class="img-responsive "></a>
+                <a href="image/carni_01.png" data-lightbox="carni-box">
+                <img src="image/carni_01.png" class="img-responsive "></a>
+                <a href="image/carni_02.jpg" data-lightbox="carni-box">
+                <img src="image/carni_02.jpg" class="img-responsive "></a>
+                <a href="image/carni_03.jpg" data-lightbox="carni-box">
+                <img src="image/carni_03.jpg" class="img-responsive "></a>
 
               </div>
               <div class="col-md-6">
-                  <img src="image/carni_04.png" class="img-responsive ">
-                <img src="image/carni_05.png" class="img-responsive">
+                <a href="image/carni_04.png" data-lightbox="carni-box">
+                <img src="image/carni_04.png" class="img-responsive "></a>
+                <a href="image/carni_05.png" data-lightbox="carni-box">
+                <img src="image/carni_05.png" class="img-responsive"></a>
                 <p><b>Abstract.</b> A method for ensuring the delivery of high quality cultured meat without worries of hazardous cell mutations from unlicensed third party in-vitro meat cultures by means of digital rights management for licensed in-vitro meat providers. In particular, described herein are methods to prevent the risk of third party cultures from contaminating or accessing the composition of the in-vitro meat culture; of exceeding safe growth limits; of accelerating the growth of cultures that have not been licensed and verified as safe. The invention restricts access to accelerated in-vitro meat growth by unlicensed/third-party cultures, and limits meat growth-per-culture to within acceptable amounts.</p>
               </div>
 
@@ -162,5 +168,12 @@
         </div>
       </div>
     </div>
+    <script src="js/lightbox-plus-jquery.min.js"></script>
+      <script>
+        lightbox.option({
+          'resizeDuration': 200,
+          'wrapAround': true
+        })
+      </script>
   </body>
 </html>
