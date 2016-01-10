@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/lightbox.min.css">
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:300,400,700' rel='stylesheet' type='text/css'>
     <script src=""></script>
     <title>BYUNNNN</title>
@@ -130,22 +130,29 @@
             <div class="image">
 
               <div class="col-md-12">
-                <img src="image/mapp_01.jpg" class="img-responsive">
-
-                <img src="image/mapp_02.jpg" class="img-responsive">
-                <img src="image/mapp_03.jpg" class="img-responsive">
+                <a href="image/mapp_01.jpg" data-lightbox="mapp-box" data-title="http://mediabyun.tumblr.com/">
+                <img src="image/mapp_01.jpg" class="img-responsive"></a>
+                <a href="image/mapp_02.jpg" data-lightbox="mapp-box">
+                <img src="image/mapp_02.jpg" class="img-responsive"></a>
+                <a href="image/mapp_03.jpg" data-lightbox="mapp-box">
+                <img src="image/mapp_03.jpg" class="img-responsive"></a>
 
               </div>
               <div class="col-md-6">
-                <img src="image/sketch_01.jpg" class="img-responsive">
-                <img src="image/sketch_02.jpg" class="img-responsive">
-                <img src="image/sketch_04.jpg" class="img-responsive">
+                <a href="image/sketch_01.jpg" data-lightbox="mapp-box">
+                <img src="image/sketch_01.jpg" class="img-responsive"></a>
+                <a href="image/sketch_02.jpg" data-lightbox="mapp-box">
+                <img src="image/sketch_02.jpg" class="img-responsive"></a>
+                <a href="image/sketch_04.jpg" data-lightbox="mapp-box">
+                <img src="image/sketch_04.jpg" class="img-responsive"></a>
 
               </div>
 
               <div class="col-md-6">
-                <img src="image/sketch_03.jpg" class="img-responsive">
-                <img src="image/sketch_05.jpg" class="img-responsive">
+                <a href="image/sketch_03.jpg" data-lightbox="mapp-box">
+                <img src="image/sketch_03.jpg" class="img-responsive"></a>
+                <a href="image/sketch_05.jpg" data-lightbox="mapp-box">
+                <img src="image/sketch_05.jpg" class="img-responsive"></a>
               </div>
             </div>
             <!-- project description -->
@@ -168,5 +175,12 @@
         </div>
       </div>
     </div>
+    <script src="js/lightbox-plus-jquery.min.js"></script>
+      <script>
+        lightbox.option({
+          'resizeDuration': 200,
+          'wrapAround': true
+        })
+      </script>
   </body>
 </html>

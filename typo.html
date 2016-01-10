@@ -5,9 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/lightbox.min.css">
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:300,400,700' rel='stylesheet' type='text/css'>
     <script src=""></script>
+
     <title>BYUNNNN</title>
     <!-- ADDING CUSTOM CSS STYLE -->
     <style>
@@ -129,20 +130,20 @@
               <div class="col-md-6">
                 <h4>Name Branding/ Logo </h4>
                 <hr>
-                <a href="image/typo_01.jpg"><img src="image/typo_01.jpg" class="img-responsive"></a>
+                <a href="image/typo_01.jpg" data-lightbox="typo-box" data-title="Name Branding/Logo"><img src="image/typo_01.jpg" class="img-responsive"></a>
 
                 <h4>Typography Poster</h4>
                 <hr>
-                <a href="image/typo_02.jpg"><img src="image/typo_02.jpg" class="img-responsive"></a>
+                <a href="image/typo_02.jpg" data-lightbox="typo-box" data-title="Typography Justice"><img src="image/typo_02.jpg" class="img-responsive"></a>
                 <!-- <img src="image/data_03.png" class="img-responsive"> -->
               </div>
               <div class="col-md-6">
                 <h4>Article Page Design</h4>
                 <hr>
-                <a href="image/typo_03.jpg"><img src="image/typo_03.jpg" class="img-responsive">
+                <a href="image/typo_03.jpg" data-lightbox="typo-box" data-title="Article Design"><img src="image/typo_03.jpg" class="img-responsive">
                 </a>
                 <h4>Slides for teaching at Mongolia</h4>
-                <hr><a href="image/typo_04.jpg">
+                <hr><a href="image/typo_04.jpg" data-lightbox="typo-box" data-title="Slides">
                 <img src="image/typo_04.jpg" class="img-responsive"></a>
                 <p></p>
               </div>
@@ -169,5 +170,12 @@
         </div>
       </div>
     </div>
+    <script src="js/lightbox-plus-jquery.min.js"></script>
+      <script>
+        lightbox.option({
+          'resizeDuration': 200,
+          'wrapAround': true
+        })
+      </script>
   </body>
 </html>

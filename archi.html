@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/lightbox.min.css">
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:300,400,700' rel='stylesheet' type='text/css'>
     <script src=""></script>
     <title>BYUNNNN</title>
@@ -127,13 +127,13 @@
             <!-- project image -->
             <div class="image">
               <div class="col-md-6">
-                <img src="image/graf_02.jpg" class="img-responsive img-circle">
-                <img src="image/graf_03.jpg" class="img-responsive img-circle">
-                <img src="image/graf_04.png" class="img-responsive img-circle">
-                <img src="image/graf_00.jpg" class="img-responsive img-circle">
+                <a href="image/graf_02.jpg" data-lightbox="graf-box"><img src="image/graf_02.jpg" class="img-responsive img-circle"></a>
+                <a href="image/graf_03.jpg" data-lightbox="graf-box"><img src="image/graf_03.jpg" class="img-responsive img-circle"></a>
+                <a href="image/graf_04.png" data-lightbox="graf-box"><img src="image/graf_04.png" class="img-responsive img-circle"></a>
+                <a href="image/graf_00.jpg" data-lightbox="graf-box"><img src="image/graf_00.jpg" class="img-responsive img-circle"></a>
               </div>
               <div class="col-md-6">
-                <img src="image/graf_01.jpg" class="img-responsive">
+                <a href="image/graf_01.jpg" data-lightbox="graf-box"><img src="image/graf_01.jpg" class="img-responsive"></a>
 
               </div>
 
@@ -159,5 +159,12 @@
         </div>
       </div>
     </div>
+    <script src="js/lightbox-plus-jquery.min.js"></script>
+      <script>
+        lightbox.option({
+          'resizeDuration': 200,
+          'wrapAround': true
+        })
+      </script>
   </body>
 </html>
