@@ -92,7 +92,7 @@ function setup(){
 	//createCanvas(1960, 400);
 	//setupDropZone();
 
-	txt = lines.join(' ');
+	txt = join(lines,' ');
 	//lines = loadStrings('data/test.txt');
 	console.log(txt)
 
