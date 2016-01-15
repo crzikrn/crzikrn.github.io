@@ -98,7 +98,7 @@ function setup(){
 	var tokens = txt.split(/\W+/);
 	console.log(tokens);
 
-  for(var i = 0; i < 20;i++){
+  for(var i = 0; i < 12;i++){
     var par = tokens[i];
     spitout.push(par);
   }
