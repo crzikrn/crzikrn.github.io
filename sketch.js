@@ -15,13 +15,13 @@ var mult = 1;
 var hamlet = function (s){
 
   s.preload = function(data){
-    lines = loadStrings('files/full_hamlet.txt');
-    createP(lines[0]);
+    lines = loadStrings('files/spam.txt');
+
   }
 
   s.setup = function(){
     createCanvas(480,400);
-    var txt = lines.join(' ');
+    txt = join(lines, ' ');
     var tokens = txt.split(/\W=/);
     console.log(tokens);
     for(var i = 0; i < tokens.length; i++){
