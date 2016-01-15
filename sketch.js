@@ -83,7 +83,7 @@ function preload(data){
 
 function setup(){
   var myCanvas = createCanvas(480, 270);
-  myCanvas.parent('text');
+  //myCanvas.parent('text');
 
 
   //   par.id('text');
