@@ -18,7 +18,7 @@
 //Karam Byun
 var lines;
 var txt;
-
+var spitout = [];
 var dict = {}; //dictionary of all words
 var bict = {}; //dictinoary of interesting words
 var keys = []; //array of all words in order
@@ -81,7 +81,7 @@ function preload(data){
 }
 
 function setup(){
-  var myCanvas = createCanvas(windowWidth*0.45, 300);
+  var myCanvas = createCanvas(windowWidth*0.65, 300);
   myCanvas.parent('text');
 
 
@@ -100,10 +100,9 @@ function setup(){
 
   for(var i = 0; i < 50;i++){
     var par = tokens[i];
-    var spitout = [];
     spitout.push(par);
   }
-console.log(spitout);
+  console.log(spitout);
   //spitout.parent('token');
 
 	for(var i = 0; i < tokens.length; i++){
