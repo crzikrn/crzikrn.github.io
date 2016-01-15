@@ -99,12 +99,12 @@ function setup(){
 	console.log(tokens);
 
   for(var i = 0; i < 50;i++){
-    var par = createP(tokens[i]);
+    var par = tokens[i];
     var spitout = [];
     spitout.push(par);
   }
-
-  spitout.parent('token');
+console.log(spitout);
+  //spitout.parent('token');
 
 	for(var i = 0; i < tokens.length; i++){
 		var token = tokens[i]
