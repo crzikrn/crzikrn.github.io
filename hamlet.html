@@ -2,14 +2,14 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- <meta http-equiv="X-UA-Compatible" content="IE=edge"> -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/lightbox.min.css">
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:300,400,700' rel='stylesheet' type='text/css'>
-    <script language="javascript" type="text/javascript" src="js/p5.min.js"></script>
-    <script language="javascript" type="text/javascript" src="js/p5.dom.js"></script>
-    <script language="javascript" type="text/javascript" src="sketch.js"></script>
+    <script type="text/javascript" src="js/p5.min.js"></script>
+    <script type="text/javascript" src="js/p5.dom.js"></script>
+    <script type="text/javascript" src="sketch.js"></script>
     <!-- <script language="javascript" type="text/javascript" src="js/dropzone.js"></script> -->
 
 
@@ -44,7 +44,19 @@
       #more:hover {text-decoration: none; border-bottom: 1px solid #000;}
       #left-bar {text-align: center;}
     </style>
-    <style> body{padding:0; margin:0;} </style>
+    <style>
+
+      body{
+        padding: 20px;
+        margin:0;
+      }
+      #text {
+       border-style: solid;
+       border-width: 1px;
+       padding: 20px;
+      }
+
+    </style>
   </head>
   <body>
     <div class="center-container" id="paper">
@@ -139,8 +151,8 @@
               </div>
             </div>
             <!-- project description -->
-            <h4>Hamlet, Text Analysis</h4>
-            <div id="hamlet"> container for p5</div>
+            <h4><a href="http://byunnnn.com/a_z/week3/index.html">Hamlet, Text Analysis Link</a></h4>
+            <!-- <div id="text"> container for p5</div> -->
 
             </div>
 
