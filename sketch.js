@@ -85,14 +85,14 @@ function setup(){
   var myCanvas = createCanvas(480, 270);
   myCanvas.parent('text');
 
-  line(15, 25, 70, 90);
-  stroke(0);
-  fill(150);
 
+  //   par.id('text');
 	//createCanvas(1960, 400);
 	//setupDropZone();
 
-	txt = join(lines,' ');
+	txt = join(lines, ' ');
+  var par = createP(txt);
+  par.id('text');
 	//lines = loadStrings('data/test.txt');
 	console.log(txt)
 
