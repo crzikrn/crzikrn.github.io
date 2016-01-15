@@ -98,8 +98,11 @@ function setup(){
 	var tokens = txt.split(/\W+/);
 	console.log(tokens);
 
-  var par = createP(tokens[1-100]);
-  par.parent('token');
+  for(var i = 0; i < 50;i++){
+    var par = createP(tokens[i]);
+    par.parent('token');
+  }
+
 
 	for(var i = 0; i < tokens.length; i++){
 		var token = tokens[i]
