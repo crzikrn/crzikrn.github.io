@@ -103,7 +103,7 @@ function setup(){
     spitout.push(par);
   }
   console.log(spitout);
-  var a = createP(spitout)+"...";
+  var a = createP(spitout);
   a.parent('token');
 
 	for(var i = 0; i < tokens.length; i++){
