@@ -30,14 +30,13 @@ var mult = 1;
 // var hamlet = function (s){
 //
 //   s.preload = function(data){
-//     //lines = loadStrings('data/full_hamlet.txt');
-//     lines = "This is a line of magnitude. Of the most marvelous content ever created in the world. Opqr is a name in the alphabet."
-//     createP(lines[0]);
+//     lines = loadStrings('files/full_hamlet.txt');
+//
 //   }
 //
 //   s.setup = function(){
 //     createCanvas(480,400);
-//     var txt = lines.join(' ');
+//     var txt = join(lines, ' ');
 //     var tokens = txt.split(/\W=/);
 //     console.log(tokens);
 //     for(var i = 0; i < tokens.length; i++){
@@ -75,7 +74,7 @@ var mult = 1;
 //
 // }
 //
-// var one = new p5(hamlet,'hamlet');
+// var one = new p5(hamlet,'text');
 
 function preload(data){
 	lines = loadStrings('files/full_hamlet.txt');
@@ -83,7 +82,7 @@ function preload(data){
 
 function setup(){
   var myCanvas = createCanvas(480, 270);
-  //myCanvas.parent('text');
+  myCanvas.parent('text');
 
 
   //   par.id('text');
