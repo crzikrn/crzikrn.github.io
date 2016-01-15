@@ -81,7 +81,7 @@ function preload(data){
 }
 
 function setup(){
-  var myCanvas = createCanvas(displayWidth*0.45, 300);
+  var myCanvas = createCanvas(windowWidth*0.45, 300);
   myCanvas.parent('text');
 
 
