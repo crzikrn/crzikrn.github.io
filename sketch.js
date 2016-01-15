@@ -1,12 +1,12 @@
 var lines;
 var text;
 
-// function preload(){
-//   lines = loadStrings('files/spam.txt');
-// }
+function preload(){
+  lines = loadStrings('files/spam.txt');
+}
 
 function setup(){
-  loadStrings('files/spam.txt',fileready);
+//  loadStrings('files/spam.txt',fileready);
   createCanvas(300,300);
   fill(150);
 
