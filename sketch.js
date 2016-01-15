@@ -98,7 +98,7 @@ function setup(){
 	var tokens = txt.split(/\W+/);
 	console.log(tokens);
 
-  var par = createP(tokens);
+  var par = createP(tokens[1-100]);
   par.parent('token');
 
 	for(var i = 0; i < tokens.length; i++){
