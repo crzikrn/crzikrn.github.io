@@ -15,7 +15,7 @@ var mult = 1;
 var hamlet = function (s){
 
   s.preload = function(data){
-    lines = loadStrings('data/full_hamlet.txt');
+    lines = loadStrings('files/full_hamlet.txt');
     createP(lines[0]);
   }
 
@@ -59,7 +59,7 @@ var hamlet = function (s){
 
 }
 
-var one = new p5(hamlet,'hamlet');
+var one = new p5(hamlet,'text');
 //
 // function preload(data){
 // 	lines = loadStrings('data/full_hamlet.txt');
