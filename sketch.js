@@ -100,9 +100,11 @@ function setup(){
 
   for(var i = 0; i < 50;i++){
     var par = createP(tokens[i]);
-    par.parent('token');
-  }
+    var list =[]
+    list.add(par);
 
+  }
+list.parent('token');
 
 	for(var i = 0; i < tokens.length; i++){
 		var token = tokens[i]
