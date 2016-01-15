@@ -81,7 +81,7 @@ function preload(data){
 }
 
 function setup(){
-  var myCanvas = createCanvas(480, 270);
+  var myCanvas = createCanvas(windowWidth, 270);
   myCanvas.parent('text');
 
 
@@ -97,6 +97,9 @@ function setup(){
 
 	var tokens = txt.split(/\W+/);
 	console.log(tokens);
+
+  var par = createP(txt);
+  par.parent('token');
 
 	for(var i = 0; i < tokens.length; i++){
 		var token = tokens[i]
