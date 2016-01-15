@@ -91,8 +91,8 @@ function setup(){
 	//setupDropZone();
 
 	txt = join(lines, ' ');
-  var par = createP(txt);
-  par.id('text');
+  //var par = createP(txt);
+  //par.id('text');
 	//lines = loadStrings('data/test.txt');
 	console.log(txt)
 
