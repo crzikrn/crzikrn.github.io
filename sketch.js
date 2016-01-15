@@ -103,8 +103,8 @@ function setup(){
     spitout.push(par);
   }
   console.log(spitout);
-  spitout.parent('token');
   var a = createP(spitout);
+  a.parent('token');
 
 	for(var i = 0; i < tokens.length; i++){
 		var token = tokens[i]
