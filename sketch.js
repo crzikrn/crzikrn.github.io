@@ -98,12 +98,12 @@ function setup(){
 	var tokens = txt.split(/\W+/);
 	console.log(tokens);
 
-  for(var i = 0; i < 50;i++){
+  for(var i = 0; i < 20;i++){
     var par = tokens[i];
     spitout.push(par);
   }
   console.log(spitout);
-  var a = createP(spitout);
+  var a = createP(spitout)+"...";
   a.parent('token');
 
 	for(var i = 0; i < tokens.length; i++){
