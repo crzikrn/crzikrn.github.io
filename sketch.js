@@ -81,7 +81,7 @@ function preload(data){
 }
 
 function setup(){
-  var myCanvas = createCanvas(windowWidth*0.65, 300);
+  var myCanvas = createCanvas(windowWidth*0.60, 300);
   myCanvas.parent('text');
 
 
@@ -103,7 +103,8 @@ function setup(){
     spitout.push(par);
   }
   console.log(spitout);
-  //spitout.parent('token');
+  spitout.parent('token');
+  var a = createP(spitout);
 
 	for(var i = 0; i < tokens.length; i++){
 		var token = tokens[i]
