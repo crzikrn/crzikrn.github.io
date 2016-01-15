@@ -7,7 +7,12 @@
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/lightbox.min.css">
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:300,400,700' rel='stylesheet' type='text/css'>
-    <script src=""></script>
+    <script language="javascript" type="text/javascript" src="js/p5.min.js"></script>
+    <script language="javascript" type="text/javascript" src="js/p5.dom.js"></script>
+    <script language="javascript" type="text/javascript" src="sketch.js"></script>
+    <!-- <script language="javascript" type="text/javascript" src="js/dropzone.js"></script> -->
+
+
     <title>BYUNNNN</title>
     <!-- ADDING CUSTOM CSS STYLE -->
     <style>
@@ -39,6 +44,7 @@
       #more:hover {text-decoration: none; border-bottom: 1px solid #000;}
       #left-bar {text-align: center;}
     </style>
+    <style> body{padding:0; margin:0;} </style>
   </head>
   <body>
     <div class="center-container" id="paper">
@@ -94,11 +100,11 @@
 
             <!-- project image -->
             <div class="image">
-              <a href=""><img src="image/graf_00.jpg" class="img-responsive img-circle"></a>
+              <a href=""><img src="image/hamlet_00.png" class="img-responsive img-circle"></a>
             </div>
             <!-- date description -->
             <p id="left-bar" style="font-family: 'Open Sans';">
-            <b>Architectural Graffiti</b><br>
+            <b>Hamlet, Text Analysis</b><br>
             ITP, NYU<br>
             New York, NY<br>
             2014</p>
@@ -114,36 +120,30 @@
           <div class="col-sm-9 col-md-9 col-lg-9 col-xs-12">
             <!-- category title -->
             <div class="category title">
-              <h4>ARCHITECTURAL GRAFFITI</h4>
+              <h4>HAMLET, TEXT ANALYSIS</h4>
               <hr>
               <h3></h3>
             </div>
             <!-- ONE -->
             <!-- project description -->
-            <p>Using graffiti as a brush to simulate analog architectural drawings. Using 3D camera movement to simulate pencil-drawn parametric design.</p>
+            <p>Understanding of the words Shakepeare uses. Hamlet text analysis to understand Shakespeare's creativity.</p>
 
-            <p>Used processing to mine xml graffiti data list to render in real-time and camera 3d movements to keep handlers in check. The rendering of 3D.</p>
+            <p>I was curious about the words that Shakespeare used in the mid-range, not to common and not to eccentric. What were the words Shakespeare used commonly through out his stories? Could be a topic that I might involve myself for the rest of the half semester. Not only him but for any writer. The width of the canvas is the length of the book from beginning to end. The location of the ellipses are the initial appearance of the word itself. The size is correlates to the number of times the word has appeared throughout the story. Most of his single to twenty appearance words newly appear all through out the book, while the words he uses the most he shows them off right at the beginning ( like the, as, and those type of words/pronouns). Meaning throughout the book Shakepeare introduces new words until the end. That is a writer with creativity.</p>
+
             <hr>
             <!-- project image -->
             <div class="image">
-              <div class="col-md-6">
-                <a href="image/graf_02.jpg" data-lightbox="graf-box"><img src="image/graf_02.jpg" class="img-responsive img-circle"></a>
-                <a href="image/graf_03.jpg" data-lightbox="graf-box"><img src="image/graf_03.jpg" class="img-responsive img-circle"></a>
-                <a href="image/graf_04.png" data-lightbox="graf-box"><img src="image/graf_04.png" class="img-responsive img-circle"></a>
-                <a href="image/graf_00.jpg" data-lightbox="graf-box"><img src="image/graf_00.jpg" class="img-responsive img-circle"></a>
-              </div>
-              <div class="col-md-6">
-                <a href="image/graf_01.jpg" data-lightbox="graf-box"><img src="image/graf_01.jpg" class="img-responsive"></a>
+              <div class="col-md-12">
+                <a href="image/hamlet_01.png" data-lightbox="graf-box"><img src="image/hamlet_01.png" class="img-responsive"></a>
 
               </div>
-
-
             </div>
             <!-- project description -->
-
+            <h4>Hamlet, Text Analysis</h4>
+            <div id="hamlet"> container for p5</div>
 
             </div>
-          </div>
+
 
         </div> <!--  END OF PORTFOLIO ROW-->
       </div> <!--  END OF CONTENT MAIN PART -->
