@@ -23,7 +23,7 @@ function setup(){
 	//createCanvas(1960, 400);
 	//setupDropZone();
 
-	txt = join(lines, ' ');
+	txt = join(lines,' ');
   //var par = createP(txt);
   //par.id('text');
 	//lines = loadStrings('data/test.txt');
