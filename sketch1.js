@@ -28,11 +28,11 @@ var kinglear = function(p){
 		var tokens = txt.split(/\W+/);
 		//console.log(tokens);
 
-		for(var i = 0; i < 12;i++){
-			var par = tokens[i];
-			par.toLowerCase();
-			spitout.push(par);
-		}
+		// for(var i = 0; i < 12;i++){
+		// 	var par = tokens[i];
+		// 	par.toLowerCase();
+		// 	spitout.push(par);
+		// }
 		console.log(spitout);
 		var a = p.createP(spitout);
 		a.parent('token');
@@ -49,6 +49,11 @@ var kinglear = function(p){
 			}
 		}
 
+		for(var i = 0; i < keys.length; i++){
+			keys.sort(function(a, b) {
+  			return (dict[b] -  dict[a]);
+			});
+		}
 
 	};
 
