@@ -35,7 +35,7 @@ var kinglear = function(p){
 		// }
 		console.log(spitout);
 		var a = p.createP(spitout);
-		a.parent('token');
+		a.parent('');
 
 		for(var i = 0; i < tokens.length; i++){
 			var token = tokens[i]
