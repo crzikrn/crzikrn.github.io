@@ -1,3 +1,13 @@
+<!-- November 2015 Karam Byun
+Webpage Portfolio using Bootstrap
+Design Documentation @ www.byunnnn.com/making-of
+
+“The Lord your God is with you,
+    the Mighty Warrior who saves.
+He will take great delight in you;
+    in his love he will no longer rebuke you,
+    but will rejoice over you with singing.” - Zephaniah 3:17 -->
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -8,8 +18,8 @@
     <link rel="stylesheet" href="css/icon.css">
     <link rel="stylesheet" href="css/animate.css">
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:300' rel='stylesheet' type='text/css'>
-    <script src=""></script>
-    <title>BYUNNNN</title>
+
+    <title>Karam Byun</title>
     <!-- ADDING CUSTOM CSS STYLE -->
     <style>
       p { font-family: Georgia, Times, Serif;}
@@ -35,6 +45,9 @@
             /*-webkit-filter: grayscale(50%);*/
             -webkit-filter: brightness(99%);
           }
+      img:hover{
+        -webkit-filter: brightness(99%);
+      }
       .btn {font-weight: bold;}
       #more { text-decoration: none; font-style: italic;}
       #more:hover {text-decoration: none; border-bottom: 1px solid #000;}
@@ -45,10 +58,10 @@
       <!--  HEADER -->
       <div class="container header" style="padding-top: 30px">
         <!--  TITLE BOX-->
-        <div class="row">
+        <div class="row" style="float:left; width: 325px">
           <!--  TITLE NAME -->
           <div class="container" style="float:left; width:240px">
-            <h1 style="margin-bottom:0px"><a id="title" href="index.html">BYUNNNN</a></h1>
+            <h1 style="margin-bottom:0px"><a id="title" href="index.html">Karam Byun.</a></h1>
           </div>
           <!--  LOGO IMAGE-->
           <div class="container" >
@@ -56,11 +69,15 @@
               margin-top: 15px;
               width: 53px;
               "> -->
-
           </div>
           <!--  PHRASE-->
-          <div class="container-fluid">
-            <p><em>Musings of technology. Ponderings of Design.</em></p>
+          <div class="container">
+            <p>
+              <em>
+                A Digital/Graphic Designer.
+                <br>A Creative HTML Developer.
+              </em>
+            </p>
           </div>
           <!-- <hr width="97%"> -->
           <!--  NAVIGATION -->
@@ -68,12 +85,24 @@
             <ul class="list-inline" style="margin-bottom: 5px">
               <li><a class="link" id="nav" href="about.html">About</a></li>
               <li><a class="link" id="nav" href="index.html">Works</a></li>
+              <li><a class="link" id="nav" href="grphic_index.html">Graphic Design</a></li>
+              <li><a class="link" id="nav" href="coding_index.html">Coding Design</a></li>
+              <li><a class="link" id="nav" href="research_index.html">Research Artist</a></li>
               <li><a class="link" id="nav"  href="http://byunnnn.com/blog">Blog</a></li>
               <!-- <li><a class="link" id="nav" href="">Contact</a></li> -->
             </ul>
           </div>
           <!-- <hr width="97%"> -->
-        </div> <!-- END OF TITLE BOX -->
+        </div> <!-- END OF TITLE BOX ROW-->
+        <div style="float:right;position:relative">
+          <ul class="soc">
+              <!-- <li><a class="soc-email2" href="mailto:byunkaram@gmail.com"></a></li> -->
+              <li><a class="soc-linkedin" href="http://www.linkedin.com/in/karambyun"></a></li>
+              <li><a class="soc-twitter" href="https://twitter.com/crzikrn/media"></a></li>
+              <li><a class="soc-github" href="https://github.com/crzikrn"></a></li>
+              <li><a class="soc-vimeo soc-icon-last" href="http://vimeo.com/crzikrn"></a></li>
+          </ul>
+        </div>
       </div>
 
       <!--  CONTENT MAIN PART -->
@@ -87,11 +116,14 @@
             <div class="category title animated bounceInLeft" style="">
               <h4>ABOUT</h4>
               <hr>
-              <h3></h3>
             </div>
             <!-- ONE -->
             <!-- project title -->
-            <h5><em><a class="link" href=""> KARAM BYUN</a></em></h5>
+            <div class="row">
+              <div class="container">
+                <h5><em><a class="link" href=""> KARAM BYUN</a></em></h5>
+              </div>
+            </div>
             <!-- project image -->
             <div class="image">
               <a href=""><img src="image/typo_00.jpg" class="img-responsive img-circle"></a>
@@ -117,49 +149,130 @@
           </div>
 
           <!--  NEWS STRIP 2-->
-          <div class="col-sm-9 col-md-9 col-lg-9 col-xs-12 animated bounceInRight">
+          <div class="col-sm-9 col-md-9 col-lg-9 col-xs-12 animated bounceInLeft">
             <!-- category title -->
             <div class="category title">
               <h4>KARAM BYUN</h4>
               <hr>
-              <h3></h3>
             </div>
-            <!-- ONE -->
-            <!-- project title -->
-            <h5><em><a class="link" href="">ABOUT</a></em></h5>
-            <!-- project image -->
-            <div class="image"></div>
-            <!-- project description -->
-            <p>I'm a graphic-media enthusiast attached to experiment with visual communication problems with technology. From building brand identity to researhcing social perception of products.
-            <br><br>
-            As an alumni at ITP, NYU. My passions are closely tied with computational media effects on society, education and religion. I love to translate perspectives to the users language; to move them and lit their dormant passions. I consider myself a digital media designer; detail-oriented visual designer and storyteller of raw human interactions. I am passionate to experiment with interactive platforms to communicate perspectives and culture.
-            <br><br>
-            On the side, I love programming languages and vector designs, and especially love to teach students. I have recently taught at Mongolia at Huree University in the Multimedia department. And am looking forward for more teaching opportunities in the future.</p>
-            <div class="more button">
 
+            <div class="row">
+              <div class="col-sm-8 col-md-6 col-lg-5 col-xs-12">
+                <!-- ONE -->
+                <!-- project title -->
+                <!-- <h5><em>
+                  <a class="link" href="">KEYWORDS</a>
+                </em></h5> -->
+                <!-- project image -->
+                <div class="image"></div>
+                <!-- project description -->
+                <h3 style="padding-top:0px; margin-top:6px">Hi, I'm Karam Byun.</h3>
+                  <p style="font-size: 18px">
+                    A Digital/Graphic Designer and <br>HTML Developer based in New York.
+                    <br>-<br>Professionally, I craft experiences of brands/campaigns for the web and print.
+                  </p>
+                  <h3 style="padding-top:10px;"> What I can do.</h3>
+                  <p style="font-size: 18px">
+                    Design brands & products through research and functional prototype iterations for both web and print.
+                    <br>-<br>Detail to brand & product development in the future by
+                    systematically thinking of its ecosystems and support models.
+                  </p>
+                </div>
+                <!-- break -->
+
+                <div class="col-sm-6 col-md-6 col-lg-6 col-xs-12">
+                  <!-- TWO -->
+                  <!-- project title -->
+                  <h3 style="padding-top:0px; margin-top:6px">Top Skills.</h3>
+                  <!-- project image -->
+                  <div class="image"></div>
+                  <!-- project description -->
+                  <p style="font-size: 18px">
+                    Designing Web and Print using <em> Adobe Illustrator, HTML, CSS, Javascript, Bootstrap, API.</em>
+                    <br><br>
+                    <h3 style="padding-top:0px; margin-top:6px">Design Skills:</h3>
+                    <p style="font-size: 18px">
+                      Adobe Illustrator, Photoshop, InDesign, After Effects, User Experience Design Methodology.
+                    </p>
+                    <br>
+                    <h3 style="padding-top:0px; margin-top:6px">Design Experiences:</h3>
+                    <p style="font-size: 18px">
+                      Projection Mapping, Branding, Logo Design, Layout Design,
+                      User Experience Research, Design Research, UI Design, Design Generalist.
+                    </p>
+                    <br>
+                    <h3 style="padding-top:0px; margin-top:6px">Coding Skills:</h3>
+                    <p style="font-size: 18px">
+                      Javacript, Processing, HTML, CSS, Bootstrap, Creative Coder.
+                    </p>
+                    <br>
+                    <h3 style="padding-top:0px; margin-top:6px">Coding Experience: </h3>
+                    <p style="font-size: 18px">
+                      Kinect, Arduino, C++, OpenFrameworks, VVVV, MongoDB, Express.js, Angular.js, Node.js,
+                      Building API, Foundation.css, New York Times API, Weather API, Alchemy API, Flickr API, PHP, Processing, p5 Library.
+                    </p>
+                  </p>
+                </div>
+            </div> <!-- END OF STRIP 2 ROW-->
+
+
+            <div class="hidden">
+              <hr>
+              <div class="col-sm-12 col-md-6 col-lg-6 col-xs-12">
+                  <!-- ONE -->
+                  <!-- project title -->
+                  <h5><em>
+                    <a class="link" href="">ABOUT ME</a>
+                  </em></h5>
+                  <!-- project image -->
+                  <div class="image"></div>
+                  <!-- project description -->
+                    <p>
+                      I'm a graphic-media enthusiast attached to experiment with visual communication problems with technology.
+                      From building brand identity to researhcing social perception of products.
+                      <br><br>
+                      As an alumni at ITP, NYU.
+                      My passions are closely tied with computational media effects on society, education and religion.
+                      I love to translate perspectives to the users language; to move them and lit their dormant passions.
+                      I consider myself a digital media designer;
+                      detail-oriented visual designer and storyteller of raw human interactions.
+                      I am passionate to experiment with interactive platforms to communicate perspectives and culture.
+                      <br><br>
+                      On the side, I love programming languages and vector designs, and especially love to teach students.
+                      I have recently taught at Mongolia at Huree University in the Multimedia department.
+                      And am looking forward for more teaching opportunities in the future.
+                    </p>
+              </div>
+              <div class="col-sm-6 col-md-6 col-lg-6 col-xs-12">
+                <!-- TWO -->
+                <!-- project title -->
+                <h5><em><a class="link" href="">SKILLS</a></em></h5>
+                <!-- project image -->
+                <div class="image"></div>
+                <!-- project description -->
+                <p> I am a
+                  <strong> graphic design researcher </strong> with
+                  <strong>front-end coding</strong> skills.
+                  With background in
+                  <strong>media design,technology & architecture</strong>,
+                  I craft insightful communication thru research.
+                <br><br>
+                Over the years I have built expertise in <strong> design consulting in visual communications, design research with data,
+                building brand identity, systems design thinking, long-term template usage,
+                design communication dynamics.</strong>
+                <br><br>
+                All projects take in consideration of the clients need and the needs of the audience.
+                Consisting of well-developed conceptual phases.
+                <br><br>
+                I have a philosophy that every client have their marketing dependables and must be designed
+                to fit the market assets/resources at hand. And that room for experimentation comes with control and responsibility.
+                That creativity is the actionable idea that makes the smallest, but impactful change.
+                </p>
+              </div>
             </div>
-            <!-- break -->
-            <br>
-            <hr>
-            <div>
-            <h5><em><a class="link" href="">SKILLS</a></em></h5>
-            <p> I am a <strong> creative coder </strong> with background in <strong>media design, technology & architecture</strong>.
-            <br><br>
 
-            Over the years I have built expertise in <strong> design consulting in visual communications, design research with data,
-            building brand identity, systems design thinking, long-term template usage,
-            design communication dynamics.</strong>
-            <br><br>
-            All projects take in consideration of the clients need and the needs of the audience.
-            Consisting of well-developed conceptual phases.
-            <br><br>
-            I have a philosophy that every client have their marketing dependables and must be designed
-            to fit the market assets/resources at hand. And that room for experimentation comes with control and responsibility.
-            That creativity is the actionable idea that makes the smallest, but impactful change.
-            </p>
+          </div> <!-- END OF STRIP 2 -->
 
-          </div>
-          </div>
 
         </div> <!--  END OF PORTFOLIO ROW-->
       </div> <!--  END OF CONTENT MAIN PART -->
@@ -175,5 +288,10 @@
         </div>
       </div>
     </div>
+    <script src="js/p5.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+    <script src="js/custom.js" type="text/javascript"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+    <script> new WOW().init(); </script>
   </body>
 </html>

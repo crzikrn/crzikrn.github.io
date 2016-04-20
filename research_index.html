@@ -1,0 +1,284 @@
+<!-- November 2015 Karam Byun
+Webpage Portfolio using Bootstrap
+Design Documentation @ www.byunnnn.com/making-of
+
+“The Lord your God is with you,
+    the Mighty Warrior who saves.
+He will take great delight in you;
+    in his love he will no longer rebuke you,
+    but will rejoice over you with singing.” - Zephaniah 3:17 -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/icon.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:300' rel='stylesheet' type='text/css'>
+    <script src="js/p5.min.js"></script>
+
+    <title>Karam Byun</title>
+    <!-- ADDING CUSTOM CSS STYLE -->
+    <style>
+      p { font-family: Georgia, Times, Serif;}
+      h1 {font-family: "nyt-cheltenham",Georgia,Times, Serif; font-size: 24px}
+      h4 { padding-top: 32px; font-family: 'Open Sans', Georgia, Times, sans-serif; font-weight: 300;}
+      h5 {font-family: Georgia, Times, Serif;}
+      hr {margin-top: 10px;
+          margin-bottom:10px;}
+      .center-container { margin: auto; max-width: 1600px;}
+      .link {font-weight: bold; color: #000; line-height: 140%;}
+      a:link { color: #000}
+      a:hover { text-decoration: none; border-bottom: 2px solid #000;}
+      a:visited { color: #000;}
+      a:active { color: #000;}
+      #title:hover { border-bottom: 0px }
+      #nav {  font-family: Georgia, Times, Serif;
+              font-weight: normal;
+              color: #777;
+              border-bottom: 1px solid #777;}
+      #nav:hover {color: #000;
+                  border-bottom: 1px solid #000;}
+      img { padding-bottom: 10px;
+            /*-webkit-filter: grayscale(50%);*/
+            -webkit-filter: brightness(90%);
+          }
+      img:hover{
+        -webkit-filter: brightness(99%);
+      }
+      .btn {font-weight: bold;}
+      #more { text-decoration: none; font-weight: bold;}
+      #more:hover {text-decoration: none; border-bottom: 1px solid #000;}
+
+    </style>
+  </head>
+  <body>
+    <div class="center-container" id="paper">
+      <!--  HEADER -->
+      <div class="container header" style="padding-top: 30px">
+        <!--  TITLE BOX-->
+        <div class="row" style="float:left; width: 325px">
+          <!--  TITLE NAME -->
+          <div class="container" style="float:left; width:280px">
+            <h1 style="margin-bottom:0px"><a id="title" href="index.html">Research Byun.</a></h1>
+          </div>
+          <!--  LOGO IMAGE-->
+          <div class="container" >
+            <!-- <img src="image/weblogo.png" class="img-responsive" alt="Responsive image" style="
+              margin-top: 15px;
+              width: 53px;
+              "> -->
+
+          </div>
+          <!--  PHRASE-->
+          <div class="container">
+            <p><em>
+              A Digital/Graphic Designer.
+              <br>A Creative HTML Developer.
+            </em></p>
+          </div>
+          <!-- <hr width="97%"> -->
+          <!--  NAVIGATION -->
+          <div class="container">
+            <ul class="list-inline" style="margin-bottom: 5px">
+              <li><a class="link" id="nav" href="about.html">About</a></li>
+              <li><a class="link" id="nav" href="index.html">Works</a></li>
+              <li><a class="link" id="nav" href="grphic_index.html">Graphic Design</a></li>
+              <li><a class="link" id="nav" href="coding_index.html">Coding Design</a></li>
+              <li><a class="link" id="nav" href="research_index.html">Research Artist</a></li>
+              <li><a class="link" id="nav"  href="http://byunnnn.com/blog">Blog</a></li>
+              <!-- <li><a class="link" id="nav" href="">Contact</a></li> -->
+            </ul>
+          </div>
+          <!-- <hr width="97%"> -->
+
+        </div> <!-- END OF TITLE BOX ROW -->
+        <div style="float:right;position:relative">
+          <ul class="soc">
+              <!-- <li><a class="soc-email2" href="mailto:byunkaram@gmail.com"></a></li> -->
+              <li><a class="soc-linkedin" href="http://www.linkedin.com/in/karambyun"></a></li>
+              <li><a class="soc-twitter" href="https://twitter.com/crzikrn/media"></a></li>
+              <li><a class="soc-github" href="https://github.com/crzikrn"></a></li>
+              <li><a class="soc-vimeo soc-icon-last" href="http://vimeo.com/crzikrn"></a></li>
+          </ul>
+        </div>
+      </div>
+
+      <!--  CONTENT MAIN PART -->
+      <div class="container">
+        <!--  ARTICLE STYLED PORTFOLIO -->
+
+          <div class="row">
+
+            <!--  NEWS STRIP 1-->
+            <div class="col-sm-3 col-md-5 col-lg-5 col-xs-12 wow animated bounceInLeft" data-wow-delay="0.15s">
+              <!-- category title -->
+              <div class="category title">
+                <h4>STORYWEAVER</h4>
+                <hr>
+                <h3></h3>
+              </div>
+
+                <!-- TWO -->
+                <!-- project title -->
+                <!-- project image -->
+                <div class="image">
+                  <a href="data_analysis.html"><img src="image/data_0A.png" class="img-responsive img-circle"></a>
+                  <!-- <a href=""><img src="image/data_01.png" class="img-responsive"></a> -->
+                </div>
+                <!-- description -->
+                <h5><em><a class="link" href="data_analysis.html">YOUTH CRIMES DATA STORY</a></em></h5>
+                <h6>DATA STORY, DATA VISUALIZATION, CRITICAL DESIGN </h6>
+                <p>Data story weaving in the relationship between youth crimes, stress, depression, college scholastic ability tests in Korea. Full analysis post. <span id="more"><a href="https://medium.com/i-data/relationships-between-youth-crimes-stress-depression-and-college-scholastic-ability-tests-4ef78ca1a250">More @Medium>></a></span> </p>
+                <!-- button -->
+                <div class="more button"></div>
+                <!-- break -->
+
+
+                <!-- THREE -->
+                <!-- project title -->
+
+                <!-- project image -->
+                <div class="image">
+                  <a href="listening.html"><img src="image/listen_22.jpg" class="img-responsive img-circle"></a>
+                  <!-- <a href=""><img src="image/carni_01.png" class="img-responsive img-circle"></a> -->
+                </div>
+                <!-- description -->
+                <h5><em><a class="link" href="listening.html">I'M LISTENING</a></em></h5>
+                <h6>VOICE RECOGNITION, TWILIO, THESIS, HOMELESS, STORY</h6>
+                <p>A speech-to-text device that forms lasting relationships between volunteers and the homeless. Through visiting a homeless shelter for 8 weeks. <span id="more"><a href="listening.html">More>></a></span></p>
+                <!-- button -->
+                <div class="more button">
+                </div>
+                <!-- break -->
+                <br>
+
+            </div> <!-- END OF NEWS STRIP 1--->
+
+          <!--  NEWS STRIP 1 -->
+          <div class="col-sm-3 col-md-3 col-lg-3 col-xs-6 wow animated bounceInLeft" data-wow-delay="0.05s">
+              <!-- category title -->
+              <div class="category title">
+                <h4>CREATIVE RESEARCH</h4>
+                <hr>
+                <h3></h3>
+              </div>
+
+              <!-- ONE -->
+              <div >
+              <!-- project title -->
+
+                <!-- project image -->
+                <div class="image">
+                  <a href="archi.html"><img src="image/graf_00.jpg" class="img-responsive img-circle"></a>
+                </div>
+                <!-- description -->
+                <h5><em><a class="link" href="archi.html"> ARCHITECTURAL GRAFFITI</a></em></h5>
+                <h6>3D CAMERA, PROCESSING, CREATIVE CODING, GRAPHIC DESIGN</h6>
+                <p>Using graffiti as a brush to simulate analog architectural drawings. Using 3D camera movement to simulate pencil-drawn parametric design. <span id="more"><a href="archi.html">More>></a></span></p>
+                <!-- button -->
+                <div class="more button"></div>
+              </div>
+
+              <!-- ONE -->
+              <div >
+              <!-- project title -->
+
+                <!-- project image -->
+                <div class="image">
+                  <a href="https://vimeo.com/76240312"><img src="image/subway.gif" class="img-responsive img-circle"></a>
+                </div>
+                <!-- description -->
+                <h5><em><a class="link" href="https://vimeo.com/76240312"> RANDOMIZED SUBWAY</a></em></h5>
+                <h6>PROCESSING, CREATIVE CODING, GRAPHIC DESIGN</h6>
+                <p>
+                  Inspired by Calvino's Invisible Citis to create a world where,
+                  computers infinitely make cities with needed transportations maps.
+                  <span id="more"><a href="https://vimeo.com/76240312">More>></a></span></p>
+                <!-- button -->
+                <div class="more button"></div>
+              </div>
+
+
+              <!-- TWO -->
+              <!-- project title -->
+
+              <!-- project image -->
+              <div class="image">
+                <a href="videolab.html"><img src="image/kinect.gif" class="img-responsive img-circle"></a>
+                <!-- <a href=""><img src="image/data_01.png" class="img-responsive"></a> -->
+              </div>
+              <!-- description -->
+              <h5><em><a class="link" href="videolab.html">MEDIA TEST LAB</a></em></h5>
+              <h6>KINECT, ARDUINO, MOTION GRAPHICS, VIDEO EDITING</h6>
+              <p>Collection of video uploads in coding and physical computing experiment tests, motion graphics, and media design. <span id="more"><a href="videolab.html"> More>></a></span></p>
+              <!-- button -->
+              <div class="more button"></div>
+              <!-- break -->
+              <br>
+
+            </div> <!-- END OF NEWS STRIP 1--->
+
+          <!--  NEWS STRIP 2-->
+          <div class="col-sm-3 col-md-4 col-lg-4 col-xs-6 wow animated bounceInLeft" data-wow-delay="0.1s">
+            <!-- category title -->
+            <div class="category title">
+              <h4>CRITICAL DESIGN</h4>
+              <hr>
+              <h3></h3>
+            </div>
+
+            <!-- ONE -->
+            <!-- project title -->
+
+            <!-- project image -->
+            <div class="image">
+              <a href="carni.html"><img src="image/carni_0A.jpg" class="img-responsive"></a>
+              <!-- <a href=""><img src="image/carni_01.png" class="img-responsive img-circle"></a> -->
+            </div>
+            <!-- description -->
+            <h5><em><a class="link" href="carni.html">CARNISSEUR™ AFTERMATH</a></em></h5>
+            <h6>PATENTS, DESIGN RESEARCH, CRITICAL DESIGN</h6>
+            <p>This is a writing on the aftermath of Carnisseur™, a fictional food corporation placed not so far into the future, its emergence and its lessons. The whole project is based on the premise that food future will be inevitably exploited by capitalistic tools. A criticism on corporations that commercializes basic rights to live as a human being. <span id="more"><a href="carni.html">More>></a></span></p>
+            <!-- button -->
+            <div class="more button">
+            </div>
+            <br>
+          </div>
+
+        <!--  NEWS STRIP 4 -->
+          <div class="hidden-sm hidden-md- hidden-lg col-xs-12 wow animated bounceInLeft" data-wow-delay="0.2s" >
+            <!-- category title -->
+            <div class="category title">
+              <h4>DIGITAL</h4>
+              <hr>
+              <h3></h3>
+            </div>
+
+          </div> <!-- END OF NEWS STRIP 4--->
+
+        </div> <!--  END OF PORTFOLIO ROW-->
+      </div> <!--  END OF CONTENT MAIN PART -->
+
+      <!--  FOOTER -->
+      <div class="container footer">
+        <div class="footer text box">
+          <img id="logo" src=""></img>
+        </div>
+        <!-- COPYRIGHT PHRASE -->
+        <div class="copyright" style="margin:30px 0px 40px 0px">
+          <p>©2016 Developed by Karam Byun.</p>
+        </div>
+      </div>
+
+    </div>
+    <script src="js/p5.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+    <script src="js/custom.js" type="text/javascript"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+    <script> new WOW().init(); </script>
+  </body>
+</html>
